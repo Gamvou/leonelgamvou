@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publications — Leonel Gamvou Taklai">
+  <title>Publications · Leonel Gamvou Taklai</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne+Mono&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.jpg" alt="LGT"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">About</a>
+      <a href="publications.html" class="active">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <div class="profile-block">
+      <div class="photo-wrap">
+        <div class="photo-placeholder">
+          <img src="leonel.JPG" alt="Leonel Gamvou Taklai">
+        </div>
+      </div>
+      <h1 class="profile-name">Leonel Gamvou Taklai</h1>
+      <div class="profile-titles">
+        <p class="title-line">MSc Computer Science · UQAC, Québec</p>
+        <p class="title-line muted">AI/ML Engineer · Verification &amp; Validation of Intelligent Systems</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leonel-gamvou-taklai-379b13294/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:lioneltaklai@email.com">Email</a>
+        <a href="https://scholar.google.ca/citations?user=hvEP3yQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.youtube.com/@lionelgamvou" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Publications</h2>
+
+      <!-- Workshop Paper — VERIFAI 2026 -->
+      <div class="pub-entry">
+        <p class="pub-title">Trustworthy Machine Learning Across the Lifecycle: A Synthesis of Current Methods</p>
+        <p class="pub-authors">
+          <span class="self">Leonel Gamvou Taklai</span>, Jonathan Roy, Sylvain Hallé, Fehmi Jaafar
+        </p>
+        <p class="pub-venue">VERIFAI 2026 · Workshop on Verification of AI · Villebremier, France · Springer LNCS (to appear)</p>
+        <div class="pub-links">
+          <a href="https://www.laser-foundation.org/verifai-2026-provisional-program/#paper-27" target="_blank" rel="noopener">Workshop page</a>
+          <a href="Gamvou_Presentation_Workshop_VERIFAI.pdf" target="_blank">Slides</a>
+        </div>
+      </div>
+
+      <!-- Preprint / Engineering Report -->
+      <div class="pub-entry">
+        <p class="pub-title">Impact of FP16 Quantization on MobileNetV3Large Performance for Mung Bean Defect Classification</p>
+        <p class="pub-authors">
+          <span class="self">Leonel Gamvou Taklai</span>, Lawrence Chege Ngugi, Cosmas Raymond Mutugi Kiruki
+        </p>
+        <p class="pub-venue">Engineering Report · Authorea · 2025</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.22541/au.174803246.63251619/v1" target="_blank" rel="noopener">Preprint</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Leonel Gamvou Taklai · Chicoutimi, Québec, Canada</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>

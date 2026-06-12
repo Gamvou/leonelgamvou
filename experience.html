@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience — Leonel Gamvou Taklai">
+  <title>Experience · Leonel Gamvou Taklai</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne+Mono&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.jpg" alt="LGT"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html" class="active">Experience</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <div class="profile-block">
+      <div class="photo-wrap">
+        <div class="photo-placeholder">
+          <img src="leonel.JPG" alt="Leonel Gamvou Taklai">
+        </div>
+      </div>
+      <h1 class="profile-name">Leonel Gamvou Taklai</h1>
+      <div class="profile-titles">
+        <p class="title-line">MSc Computer Science · UQAC, Québec</p>
+        <p class="title-line muted">AI/ML Engineer · Verification &amp; Validation of Intelligent Systems</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leonel-gamvou-taklai-379b13294/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:lioneltaklai@email.com">Email</a>
+        <a href="https://scholar.google.ca/citations?user=hvEP3yQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.youtube.com/@lionelgamvou" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <img src="univ_logo.jpeg" alt="University Social Services">
+        </div>
+        <div>
+          <p class="exp-role">Bachelor's Internship — Software Engineering</p>
+          <p class="exp-meta">3 months · 2021 · University Social Services Centers · Ngaoundéré, Cameroon</p>
+          <p class="exp-desc">
+            Designed and developed a web application for student housing management using Laravel, Bootstrap, and jQuery.
+            Covered full requirements specification, validation, and testing phases.
+            The system reduced administrative workload and improved operational efficiency.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <img src="Sodecoton_logo.png" alt="SODECOTON">
+        </div>
+        <div>
+          <p class="exp-role">DUT Internship — Computer Engineering</p>
+          <p class="exp-meta">2 months · 2020 · SODECOTON · Garoua, Cameroon</p>
+          <p class="exp-desc">
+            Built and deployed a web application for internship management using CodeIgniter and MySQL,
+            supporting over 400 concurrent users across 10 departments.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-logo">
+          <img src="CENADI_logo.png" alt="CENADI">
+        </div>
+        <div>
+          <p class="exp-role">Introductory Industrial Internship</p>
+          <p class="exp-meta">1 month · 2019 · CENADI · Yaoundé, Cameroon</p>
+          <p class="exp-desc">
+            Immersive introduction to the professional environment at Cameroon's national centre for computer development.
+            Gained familiarity with organizational hierarchy, IT infrastructure, and public-sector software practices.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Leonel Gamvou Taklai · Chicoutimi, Québec, Canada</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>

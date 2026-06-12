@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects — Leonel Gamvou Taklai">
+  <title>Projects · Leonel Gamvou Taklai</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne+Mono&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.jpg" alt="LGT"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <div class="profile-block">
+      <div class="photo-wrap">
+        <div class="photo-placeholder">
+          <img src="leonel.JPG" alt="Leonel Gamvou Taklai">
+        </div>
+      </div>
+      <h1 class="profile-name">Leonel Gamvou Taklai</h1>
+      <div class="profile-titles">
+        <p class="title-line">MSc Computer Science · UQAC, Québec</p>
+        <p class="title-line muted">AI/ML Engineer · Verification &amp; Validation of Intelligent Systems</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leonel-gamvou-taklai-379b13294/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:lioneltaklai@email.com">Email</a>
+        <a href="https://scholar.google.ca/citations?user=hvEP3yQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.youtube.com/@lionelgamvou" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Projects</h2>
+
+      <span class="section-label">AI &amp; Machine Learning</span>
+
+      <div class="proj-entry">
+        <p class="proj-title">Mung Bean Defect Classifier — FP16 Quantization Study</p>
+        <p class="proj-stack">Python · TensorFlow · MobileNetV3 · FP16 quantization</p>
+        <p class="proj-desc">
+          Investigated the effect of FP16 quantization on classification accuracy for agricultural defect detection.
+          Fine-tuned MobileNetV3Large on a custom mung bean dataset and benchmarked performance vs full-precision models.
+          Results published as an engineering report on Authorea.
+        </p>
+        <div class="proj-links">
+          <a href="https://doi.org/10.22541/au.174803246.63251619/v1" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-entry">
+        <p class="proj-title">V&amp;V Survey — Lifecycle Analysis Tool</p>
+        <p class="proj-stack">Python · matplotlib · LaTeX · ACM acmart</p>
+        <p class="proj-desc">
+          Built a curated literature database of 60+ V&amp;V papers for AI/ML systems, categorised across 10 lifecycle
+          phases, 5 method types, 3 maturity levels, and 27 trustworthiness properties.
+          Generated publication-quality figures for submission to ACM Computing Surveys.
+        </p>
+        <div class="proj-links">
+          <a href="publications.html">Paper</a>
+        </div>
+      </div>
+
+      <span class="section-label">Software Testing</span>
+
+      <div class="proj-entry">
+        <p class="proj-title">Pairwise Combinatorial Test Generator</p>
+        <p class="proj-stack">Java · greedy algorithm · shell scripting</p>
+        <p class="proj-desc">
+          Implemented a greedy pairwise (t=2) test generation algorithm in Java that reduced a 24-combination
+          parameter space to 12 test cases — achieving 100% pairwise coverage (12/12 PASS).
+          Integrated with a shell harness for automated execution.
+        </p>
+        <div class="proj-links">
+          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <span class="section-label">Web Applications</span>
+
+      <div class="proj-entry">
+        <p class="proj-title">Student Housing Management System</p>
+        <p class="proj-stack">Laravel · Bootstrap · jQuery · MySQL</p>
+        <p class="proj-desc">
+          Full-stack web application for managing student housing allocations at a university social services center.
+          Covered requirements specification, data validation, and testing, reducing manual administrative workload.
+        </p>
+        <div class="proj-links">
+          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-entry">
+        <p class="proj-title">Internship Management Platform</p>
+        <p class="proj-stack">CodeIgniter · MySQL · Bootstrap</p>
+        <p class="proj-desc">
+          Deployed an internship tracking system for SODECOTON, supporting 400+ concurrent users across
+          10 departments. Managed student-supervisor assignments, progress reporting, and evaluations.
+        </p>
+        <div class="proj-links">
+          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Leonel Gamvou Taklai · Chicoutimi, Québec, Canada</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => links.classList.remove('open'))
+    );
+  </script>
+</body>
+</html>
