@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   LEONEL GAMVOU TAKLAI — Portfolio Stylesheet
+   LEONEL GAMVOU Tak-lai — Portfolio Stylesheet
    Design: Editorial · Refined · Monochrome-first
    ═══════════════════════════════════════════════ */
 
@@ -147,7 +147,7 @@ main {
 .profile-block {
   margin-bottom: 3.5rem;
   display: grid;
-  grid-template-columns: 88px 1fr;
+  grid-template-columns: 110px 1fr;
   grid-template-rows: auto auto auto;
   column-gap: 1.75rem;
   align-items: start;
@@ -160,8 +160,8 @@ main {
 }
 
 .photo-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
   background: #e2e1dc;

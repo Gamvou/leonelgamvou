@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projects — Leonel Gamvou Taklai">
+  <meta name="description" content="Projects — Leonel Gamvou Tak-lai">
   <title>Projects · Leonel Gamvou Tak-lai</title>
   <link rel="icon" type="image/jpeg" href="logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
     <div class="profile-block">
       <div class="photo-wrap">
         <div class="photo-placeholder">
-          <img src="leonel.JPG" alt="Leonel Gamvou Taklai">
+          <img src="leonel.JPG" alt="Leonel Gamvou Tak-lai">
         </div>
       </div>
       <h1 class="profile-name">Leonel Gamvou Tak-lai</h1>
@@ -41,30 +41,63 @@
       </div>
       <div class="social-links">
         <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/leonel-gamvou-taklai-379b13294/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:lioneltaklai@email.com">Email</a>
+        <a href="https://www.linkedin.com/in/leonel-gamvou-Tak-lai-379b13294/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:lionelTak-lai@email.com">Email</a>
         <a href="https://scholar.google.ca/citations?user=hvEP3yQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://www.youtube.com/@lionelgamvou" target="_blank" rel="noopener">YouTube</a>
+       
       </div>
     </div>
 
     <section>
       <h2>Projects</h2>
 
-      <span class="section-label">AI &amp; Machine Learning &amp; Deep Learning</span>
+      <span class="section-label">Web Applications</span>
+
       <div class="proj-entry">
-        <p class="proj-title">Customer Revenue Data Preparation Pipeline</p>
-        <p class="proj-stack">Python · pandas · scikit-learn</p>
+        <p class="proj-title">Norlease</p>
+        <p class="proj-stack">Next.js · TypeScript · Drizzle ORM · Cloudflare R2</p>
         <p class="proj-desc">
-          Built a scikit-learn pipeline that cleans and enriches 10,000 e-commerce customer records: 
-          custom transformers cap outliers via interquartile range and join country-level population/GDP
-          data with automated key normalization. Composed with ColumnTransformer to guarantee identical
-          preprocessing between train and test splits, avoiding data leakage.
+          Verified rental-listing platform for North Bay and Northern Ontario, built from the ground up as
+          co-founder and founding software engineer. Includes a CI/CD pipeline that deploys automatically to
+          production on every merge, plus database migrations, authentication, and admin tooling.
         </p>
         <div class="proj-links">
-          <a href="https://github.com/Gamvou/customer-revenue-pipeline" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://northlease.ca" target="_blank" rel="noopener">northlease.ca</a>
         </div>
       </div>
+
+      <div class="proj-entry">
+        <p class="proj-title">Student Housing Management Platform</p>
+        <p class="proj-stack">Next.js · Prisma · Supabase · PostgreSQL</p>
+        <p class="proj-desc">
+          Full-stack platform built for a private client managing student housing in Chicoutimi: tenant portal,
+          automated document generation, payment tracking with smart reminders, photo gallery, PDF document viewer,
+          and an interactive map of available rooms.
+        </p>
+        <div class="proj-links">
+          <a href="https://alainchambregirard.ca/" target="_blank" rel="noopener">alainchambregirard.ca</a>
+        </div>
+      </div>
+
+      <div class="proj-entry">
+        <p class="proj-title">Student Housing Management System</p>
+        <p class="proj-stack">Laravel · Bootstrap · jQuery · MySQL</p>
+        <p class="proj-desc">
+          Full-stack web application for managing student housing allocations at a university social services center.
+          Covered requirements specification, data validation, and testing, reducing manual administrative workload.
+        </p>
+      </div>
+
+      <div class="proj-entry">
+        <p class="proj-title">Internship Management Platform</p>
+        <p class="proj-stack">CodeIgniter · MySQL · Bootstrap</p>
+        <p class="proj-desc">
+          Deployed an internship tracking system for SODECOTON, supporting 400+ concurrent users across
+          10 departments. Managed student-supervisor assignments, progress reporting, and evaluations.
+        </p>
+      </div>
+
+      <span class="section-label">AI &amp; Machine Learning</span>
 
       <div class="proj-entry">
         <p class="proj-title">Mung Bean Defect Classifier — FP16 Quantization Study</p>
@@ -76,7 +109,6 @@
         </p>
         <div class="proj-links">
           <a href="https://doi.org/10.22541/au.174803246.63251619/v1" target="_blank" rel="noopener">Paper</a>
-          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
@@ -102,47 +134,6 @@
           Implemented a greedy pairwise (t=2) test generation algorithm in Java that reduced a 24-combination
           parameter space to 12 test cases — achieving 100% pairwise coverage (12/12 PASS).
           Integrated with a shell harness for automated execution.
-        </p>
-        <div class="proj-links">
-          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <span class="section-label">Web Applications</span>
-
-      <div class="proj-entry">
-        <p class="proj-title">Student Room Rental Platform</p>
-        <p class="proj-stack">Next.js 16 · Prisma · PostgreSQL · Supabase · Tailwind CSS · Cloudinary · Resend · Vercel</p>
-        <p class="proj-desc">
-          Full-stack web application for managing student room rentals near to the University of Quebec at Chicoutimi (UQAC).
-          Features include online reservation with automated lease generation, tenant portal with document upload,
-          payment tracking, maintenance reporting, contract renewal, and an interactive map with walking distance to campus.
-          Deployed on Vercel with Supabase (PostgreSQL) as the production database.
-        </p>
-        <div class="proj-links">
-          <a href="https://github.com/Gamvou/gestion-logement" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://gestion-logement-am6g.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="proj-entry">
-        <p class="proj-title">Student Housing Management System</p>
-        <p class="proj-stack">Laravel · Bootstrap · jQuery · MySQL</p>
-        <p class="proj-desc">
-          Full-stack web application for managing student housing allocations at a university social services center.
-          Covered requirements specification, data validation, and testing, reducing manual administrative workload.
-        </p>
-        <div class="proj-links">
-          <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <div class="proj-entry">
-        <p class="proj-title">Internship Management Platform</p>
-        <p class="proj-stack">CodeIgniter · MySQL · Bootstrap</p>
-        <p class="proj-desc">
-          Deployed an internship tracking system for SODECOTON, supporting 400+ concurrent users across
-          10 departments. Managed student-supervisor assignments, progress reporting, and evaluations.
         </p>
         <div class="proj-links">
           <a href="https://github.com/Gamvou" target="_blank" rel="noopener">GitHub</a>
